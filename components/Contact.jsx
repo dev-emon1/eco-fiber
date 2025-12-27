@@ -10,7 +10,7 @@ export default function Contact() {
         {/* Description */}
         <p className="mt-6 text-text-secondary leading-relaxed">
           For inquiries, collaboration, or further information regarding the MAK
-          Eco Bag and ECO-FIBER initiative, please contact us using the details
+          Eco Bag and ECO-FIBRE initiative, please contact us using the details
           below.
         </p>
 

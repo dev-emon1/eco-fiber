@@ -4,16 +4,20 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 left-0 w-full bg-white border-b border-gray-200 z-50">
       <div className="container h-16 flex items-center justify-between">
-        {/* Brand */}
-        <div className="text-xl font-semibold text-eco-dark tracking-wide">
-          ECO<span className="text-eco-base">-FIBER</span>
-        </div>
+        {/* Logo */}
+        <a href="#about" className="flex items-center">
+          <img
+            src="/logo.png"
+            alt="ECO-FIBRE Logo"
+            className="h-20 w-auto object-contain"
+          />
+        </a>
 
         {/* Navigation */}
         <nav className="hidden md:flex gap-7 text-sm font-medium text-text-secondary">
           {[
             ["About", "#about"],
-            ["Innovation", "#innovation"],
+            // ["Innovation", "#innovation"],
             ["Inventor", "#inventor"],
             ["Jute", "#jute"],
             ["Product", "#product"],
