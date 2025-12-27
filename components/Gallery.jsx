@@ -1,37 +1,101 @@
-const images = [
-  "/images/gallery/gallery-1.jpg",
-  "/images/gallery/gallery-2.jpg",
-  "/images/gallery/gallery-3.jpg",
-  "/images/gallery/gallery-4.jpg",
-  "/images/gallery/gallery-5.jpg",
-  "/images/gallery/gallery-6.jpg",
+const rows = [
+  {
+    //  rowTitle: "Research & Raw Materials",
+    sections: [
+      {
+        title: "Research & Innovation",
+        images: [
+          "/images/gallery/research-1.png",
+          "/images/gallery/research-2.png",
+        ],
+      },
+      {
+        title: "Jute Cultivation & Raw Materials",
+        images: ["/images/gallery/jute-1.jpg", "/images/gallery/jute-2.jpg"],
+      },
+    ],
+  },
+  {
+    //  rowTitle: "Product Development & Usage",
+    sections: [
+      {
+        title: "MAK Eco Bag – Product",
+        images: [
+          "/images/gallery/product-1.jpg",
+          "/images/gallery/product-2.jpg",
+        ],
+      },
+      {
+        title: "Practical Usage",
+        images: ["/images/gallery/usage-1.jpg", "/images/gallery/usage-2.jpg"],
+      },
+    ],
+  },
 ];
 
 export default function Gallery() {
   return (
     <section id="gallery" className="section section-light">
-      <div>
-        <h2 className="text-2xl md:text-3xl font-semibold text-eco-dark">
+      <div className="max-w-7xl mx-auto">
+        {/* Main Heading */}
+        <h2 className="text-2xl md:text-3xl font-semibold text-eco-dark text-center">
           Gallery
         </h2>
 
-        <p className="mt-4 max-w-2xl text-text-secondary">
-          A visual overview of the MAK Eco Bag initiative, showcasing product
-          development, materials, and sustainable applications.
+        <p className="mt-4 max-w-3xl mx-auto text-center text-text-secondary">
+          A visual overview of the MAK Eco Bag initiative—from research and jute
+          cultivation to product development and real-world applications.
         </p>
 
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          {images.map((src, index) => (
-            <div key={index} className="border border-eco-base overflow-hidden">
-              <img
-                src={src}
-                alt={`MAK Eco Bag gallery image ${index + 1}`}
-                className="w-full h-56 object-cover hover:opacity-90 transition-opacity"
-              />
+        {/* ROWS */}
+        <div className="mt-16 space-y-28">
+          {rows.map((row, rowIndex) => (
+            <div key={rowIndex}>
+              {/* Row Title */}
+              <h3 className="text-xl md:text-2xl font-semibold text-eco-dark text-center">
+                {row.rowTitle}
+              </h3>
+
+              {/* Two Sections per Row */}
+              <div className="mt-12 grid grid-cols-1 lg:grid-cols-2 gap-14">
+                {row.sections.map((section, idx) => (
+                  <GalleryBlock key={idx} section={section} />
+                ))}
+              </div>
             </div>
           ))}
         </div>
       </div>
     </section>
+  );
+}
+
+/* ---------------------------
+   Reusable Gallery Block
+---------------------------- */
+function GalleryBlock({ section }) {
+  return (
+    <div>
+      {/* Section Title */}
+      <h4 className="text-lg md:text-xl font-medium text-eco-dark text-center">
+        {section.title}
+      </h4>
+
+      {/* Images */}
+      <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-6">
+        {section.images.map((src, i) => (
+          <div
+            key={i}
+            className="group border border-eco-base p-4 h-64 flex items-center justify-center transition-all duration-300 hover:border-hover-eco"
+          >
+            <img
+              src={src}
+              alt={`${section.title} image ${i + 1}`}
+              className="max-h-full max-w-full object-contain transition-all duration-300 group-hover:scale-[1.02]"
+            />
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }

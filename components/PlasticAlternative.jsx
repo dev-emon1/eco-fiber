@@ -1,32 +1,42 @@
 export default function PlasticAlternative() {
   return (
-    <section className="section section-light">
-      <div className="max-w-4xl">
-        <h2 className="text-2xl md:text-3xl font-semibold text-eco-dark">
-          Alternative to Single-Use Plastic Bag
-        </h2>
+    <section className="section">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        {/* TEXT */}
+        <div>
+          <h2 className="text-2xl md:text-3xl font-semibold text-eco-dark">
+            Alternative to Single-Use Plastic Bag
+          </h2>
 
-        <p className="mt-6 text-text-secondary leading-relaxed">
-          MAK Eco Bag is designed as a responsible alternative to conventional
-          single-use plastic bags. It is well known for its water-soluble and
-          biodegradable properties, making it suitable for both land and marine
-          environments.
-        </p>
+          <p className="mt-6 text-text-secondary leading-relaxed">
+            The MAK Eco Bag is famed for its water-soluble feature, which allows
+            it to dissolve safely in both regular and marine water within seven
+            (7) days.
+          </p>
 
-        <ul className="mt-6 space-y-3 text-text-secondary">
-          <li>
-            • Dissolves in regular and marine water within{" "}
-            <span className="font-medium text-text-primary">7 days</span>
-          </li>
-          <li>
-            • Decomposes in landfill within{" "}
-            <span className="font-medium text-text-primary">120 days</span>
-          </li>
-          <li>
-            • Supports efficient recycling through liquid casting production
-          </li>
-          <li>• Uses the same machinery to recycle previously used bags</li>
-        </ul>
+          <p className="mt-4 text-text-secondary leading-relaxed">
+            In landfill conditions, the bag decomposes naturally within one
+            hundred twenty (120) days. Its liquid casting production process
+            enables efficient recycling and allows the same machinery to be used
+            for transforming previously used bags.
+          </p>
+
+          <ul className="mt-6 space-y-3 text-text-secondary">
+            <li>• Dissolves in water within 7 days</li>
+            <li>• Decomposes in landfill within 120 days</li>
+            <li>• Marine-safe and environmentally responsible</li>
+            <li>• Efficient recycling through liquid casting</li>
+          </ul>
+        </div>
+
+        {/* IMAGE */}
+        <div>
+          <img
+            src="/images/product/mak-eco-bag-water-soluble.jpg"
+            alt="Water soluble MAK Eco Bag"
+            className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
+          />
+        </div>
       </div>
     </section>
   );

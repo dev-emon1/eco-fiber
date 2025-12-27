@@ -1,52 +1,99 @@
 export default function EcoBag() {
   return (
     <section id="product" className="section">
-      <div className="max-w-4xl">
-        <h2 className="text-2xl md:text-3xl font-semibold text-eco-dark">
-          MAK Eco Bag
-        </h2>
+      <div className="space-y-24">
+        {/* BLOCK 1 — Product Introduction */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          {/* Text */}
+          <div>
+            <h2 className="text-2xl md:text-3xl font-semibold text-eco-dark">
+              MAK Eco Bag
+            </h2>
 
-        <p className="mt-6 text-text-secondary leading-relaxed">
-          MAK Eco Bag is a sustainable and eco-friendly solution designed to
-          support a greener planet. It is made from cellulose-based biopolymer
-          derived from jute — the golden fibre of Bangladesh — a renewable and
-          environmentally responsible resource.
-        </p>
+            <p className="mt-6 text-text-secondary leading-relaxed">
+              Introducing the MAK Eco Bag — a sustainable solution and an
+              eco-friendly companion for a greener planet. It is made from
+              cellulose-based biopolymer derived from jute, the golden fibre of
+              Bangladesh.
+            </p>
 
-        <p className="mt-4 text-text-secondary leading-relaxed">
-          The bag degrades harmlessly into the environment, leaving no toxic
-          residue behind. This innovation addresses the growing need for
-          alternatives to conventional plastic products.
-        </p>
-
-        {/* Highlights */}
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="border border-eco-base p-6">
-            <h3 className="text-lg font-medium text-eco-dark">
-              Sustainable Material
-            </h3>
-            <p className="mt-2 text-sm text-text-secondary">
-              Made from renewable jute-based biopolymer that supports a circular
-              and eco-friendly lifecycle.
+            <p className="mt-4 text-text-secondary leading-relaxed">
+              Jute is a renewable natural resource, and the MAK Eco Bag degrades
+              harmlessly into the environment, leaving no trace behind. This
+              innovation directly addresses the environmental challenges caused
+              by single-use plastic products.
             </p>
           </div>
 
-          <div className="border border-eco-base p-6">
-            <h3 className="text-lg font-medium text-eco-dark">
-              Environment Friendly
+          {/* Image */}
+          <div>
+            <img
+              src="/images/product/mak-eco-bag-main.jpg"
+              alt="MAK Eco Bag made from jute biopolymer"
+              className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
+            />
+          </div>
+        </div>
+
+        {/* BLOCK 2 — Made Better for Environment */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          {/* Image */}
+          <div>
+            <img
+              src="/images/product/mak-eco-bag-environment.jpg"
+              alt="MAK Eco Bag supporting a better environment"
+              className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
+            />
+          </div>
+
+          {/* Text */}
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold text-eco-dark">
+              MAK Eco Bag Made Better for Environment
             </h3>
-            <p className="mt-2 text-sm text-text-secondary">
-              Designed to reduce natural waste and minimize environmental
-              pollution.
+
+            <p className="mt-6 text-text-secondary leading-relaxed">
+              MAK Eco Bag is made and crafted with care to support a better
+              environment. The innovative creation is designed with the goal of
+              reducing natural waste and promoting sustainability.
+            </p>
+
+            <p className="mt-4 text-text-secondary leading-relaxed">
+              By embracing environmentally responsible materials and production
+              processes, MAK Eco Bag becomes an active part of the solution for
+              a greener and cleaner world.
+            </p>
+          </div>
+        </div>
+
+        {/* BLOCK 3 — Plastic Free & Biodegradable */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+          {/* Text */}
+          <div>
+            <h3 className="text-xl md:text-2xl font-semibold text-eco-dark">
+              Completely Plastic-Free & Biodegradable
+            </h3>
+
+            <p className="mt-6 text-text-secondary leading-relaxed">
+              MAK Eco Bag is a true game-changer. It is completely plastic-free
+              and biodegradable, embodying a strong commitment to protecting the
+              planet.
+            </p>
+
+            <p className="mt-4 text-text-secondary leading-relaxed">
+              This innovation encourages the transition away from harmful
+              plastics and supports a sustainable future where products return
+              safely to nature after use.
             </p>
           </div>
 
-          <div className="border border-eco-base p-6">
-            <h3 className="text-lg font-medium text-eco-dark">Plastic-Free</h3>
-            <p className="mt-2 text-sm text-text-secondary">
-              Completely free from plastic, helping to protect land and marine
-              ecosystems.
-            </p>
+          {/* Image */}
+          <div>
+            <img
+              src="/images/product/mak-eco-bag-plastic-free.jpg"
+              alt="Plastic free and biodegradable MAK Eco Bag"
+              className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
+            />
           </div>
         </div>
       </div>
