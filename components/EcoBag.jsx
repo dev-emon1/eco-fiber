@@ -28,7 +28,7 @@ export default function EcoBag() {
           {/* Image */}
           <div>
             <img
-              src="/images/product/mak-eco-bag-main.jpg"
+              src="/images/product/mak-eco-bag-main.png"
               alt="MAK Eco Bag made from jute biopolymer"
               className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
             />
@@ -40,7 +40,7 @@ export default function EcoBag() {
           {/* Image */}
           <div>
             <img
-              src="/images/product/mak-eco-bag-environment.jpg"
+              src="/images/product/mak-eco-bag-environment.png"
               alt="MAK Eco Bag supporting a better environment"
               className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
             />
@@ -90,7 +90,7 @@ export default function EcoBag() {
           {/* Image */}
           <div>
             <img
-              src="/images/product/mak-eco-bag-plastic-free.jpg"
+              src="/images/product/mak-eco-bag-plastic-free.png"
               alt="Plastic free and biodegradable MAK Eco Bag"
               className="w-full rounded-md object-cover transition-all duration-300 hover:opacity-90"
             />

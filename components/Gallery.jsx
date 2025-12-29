@@ -21,13 +21,13 @@ const rows = [
       {
         title: "MAK Eco Bag – Product",
         images: [
-          "/images/gallery/product-1.jpg",
-          "/images/gallery/product-2.jpg",
+          "/images/gallery/product-1.png",
+          "/images/gallery/product-2.png",
         ],
       },
       {
         title: "Practical Usage",
-        images: ["/images/gallery/usage-1.jpg", "/images/gallery/usage-2.jpg"],
+        images: ["/images/gallery/usage-1.png", "/images/gallery/usage-2.png"],
       },
     ],
   },

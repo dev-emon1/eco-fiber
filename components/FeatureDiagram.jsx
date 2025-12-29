@@ -43,7 +43,7 @@ export default function FeatureDiagram() {
           <img
             src="/images/features/mak-eco-bag-diagram.png"
             alt="MAK Eco Bag feature diagram"
-            className="w-64 md:w-72 transition-transform duration-300 hover:scale-[1.03]"
+            className=" transition-transform duration-300 hover:scale-[1.03]"
           />
         </div>
 
