@@ -8,7 +8,7 @@ export default function Navbar() {
         <a href="#about" className="flex items-center">
           <img
             src="/logo.png"
-            alt="ECO-FIBRE Logo"
+            alt="ECO FIBRE Logo"
             className="h-20 w-auto object-contain"
           />
         </a>

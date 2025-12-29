@@ -5,7 +5,7 @@ const rows = [
       {
         title: "Research & Innovation",
         images: [
-          "/images/gallery/research-1.png",
+          "/images/gallery/research-1.webp",
           "/images/gallery/research-2.webp",
         ],
       },
