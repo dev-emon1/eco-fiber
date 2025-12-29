@@ -35,7 +35,7 @@ export default function Hero() {
         {/* Image */}
         <div className="w-full">
           <img
-            src="/images/hero/eco-bag.png"
+            src="/images/hero/eco-bag.webp"
             alt="MAK Eco Bag made from jute biopolymer"
             className="w-full rounded-md object-cover transition-transform duration-300 hover:scale-[1.02]"
           />

@@ -41,7 +41,7 @@ export default function FeatureDiagram() {
         {/* CENTER IMAGE */}
         <div className="flex justify-center">
           <img
-            src="/images/features/mak-eco-bag-diagram.png"
+            src="/images/features/mak-eco-bag-diagram.webp"
             alt="MAK Eco Bag feature diagram"
             className=" transition-transform duration-300 hover:scale-[1.03]"
           />

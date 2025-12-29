@@ -6,7 +6,7 @@ const rows = [
         title: "Research & Innovation",
         images: [
           "/images/gallery/research-1.png",
-          "/images/gallery/research-2.png",
+          "/images/gallery/research-2.webp",
         ],
       },
       {
@@ -21,13 +21,16 @@ const rows = [
       {
         title: "MAK Eco Bag – Product",
         images: [
-          "/images/gallery/product-1.png",
-          "/images/gallery/product-2.png",
+          "/images/gallery/product-1.webp",
+          "/images/gallery/product-2.webp",
         ],
       },
       {
         title: "Practical Usage",
-        images: ["/images/gallery/usage-1.png", "/images/gallery/usage-2.png"],
+        images: [
+          "/images/gallery/usage-1.webp",
+          "/images/gallery/usage-2.webp",
+        ],
       },
     ],
   },
