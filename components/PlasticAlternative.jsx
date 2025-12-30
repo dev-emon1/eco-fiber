@@ -22,8 +22,10 @@ export default function PlasticAlternative() {
           </p>
 
           <ul className="mt-6 space-y-3 text-text-secondary">
-            <li>• Dissolves in water within (7) days</li>
-            <li>• Decomposes in landfill within (120) days</li>
+            <li>• Dissolves in water within seven (7) days</li>
+            <li>
+              • Decomposes in landfill within one hundred twenty (120) days
+            </li>
             <li>• Marine-safe and environmentally responsible</li>
             <li>• Efficient recycling through liquid casting</li>
           </ul>
